@@ -1,0 +1,37 @@
+- date:  "Mar. 2017 - "
+  title: "Product Manager & Interaction Designer @ Ling Inc."
+  host:
+    name: "<a href='http://www-bcf.usc.edu/~feisha/'>Jiawei Gu</a>"
+    role: "Supervisor"
+  brief: true
+- date:  "Jul. 2015 - Mar. 2017"
+  title: "Product Manager & Interaction Designer @ Deepglint Inc."
+  host:
+    name: "<a href=''>Dr. Yong Zhao</a>"
+    role: "Supervisor"
+  brief: true
+- date:  "Dec. 2014 - Feb. 2015"
+  title: "PR Intern @ Deepglint Inc."
+  host:
+    name: "<a href=''>Bofei He</a>"
+    role: "Supervisor"
+  brief: false
+- date:  "Summer 2012"
+  title: "Exchange student @ UCLA"
+  desc:  "Collaborated program by ZJU and UCLA"
+  host:  false
+  brief: false
+- date:  "2011 - 2015"
+  title: "Undergraduate @ Chu Kochen Honors College, ZJU"
+  desc:  "B.Sci. in Management"
+  host:
+    name: "<a href=''>Prof. Xiaobo Wu</a>"
+    role: "Supervisor"
+  brief: true
+- date:  "2011 - 2015"
+  title: "Undergraduate student @ ZJU"
+  desc:  "B.Sci. in Agriculture & Biostatistics"
+  host:
+    name: "<a href=''>Prof. Jun Zhu</a>"
+    role: "Supervisor"
+  brief: true

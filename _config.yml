@@ -24,10 +24,16 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: minima
 plugins:
   - jekyll-feed
 
+# Social media link for the site
+social:
+  github:     tianqi-zhou
+  linkedin:   tianqi-zhou-571b8985
+  rss:        /feed.xml
+
+google_analytics_token: 'UA-60071442-5'
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
