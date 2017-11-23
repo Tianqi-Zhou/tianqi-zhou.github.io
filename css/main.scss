@@ -12,7 +12,7 @@ $base-line-height:  1.5;
 
 $spacing-unit:      30px;
 
-$magenta-color:     #ff00ff;
+$magenta-color:     #ff8ae2;
 $magenta-color-light: lighten($magenta-color, 35%);
 $magenta-color-dark:  darken($magenta-color, 35%);
 
@@ -32,14 +32,20 @@ $blue-color-dark:   darken($blue-color,  25%);
 $white-color:       #ffffff;
 $white-color-dark:  darken($white-color, 5%);
 
+$purple-color:      #8798ff;
+$purple-color-light: lighten($purple-color, 40%);
+$purple-color-dark:  darken($purple-color, 25%);
+
 $grey-color:        #828282;
 $grey-color-light:  lighten($grey-color, 40%);
 $grey-color-bright: lighten($grey-color, 50%);
 $grey-color-dark:   darken($grey-color, 35%);
 
 $text-color:        #111;
-$background-color:  #f9f9f9;
-$brand-color:       #2a7ae2;
+// $background-color:  #f9f9f9;
+$background-color:  #ffffff;
+
+$brand-color:       $purple-color;
 $brand-color-light: lighten($brand-color, 40%);
 $brand-color-dark:  darken($brand-color, 25%);
 
@@ -50,13 +56,13 @@ $facebook-color:    #3B5998;
 $github-color:      #000000;
 
 // Site color scheme[primary and secondary]
-$primary-color:             $red-color-dark;
-$primary-color-light:       $red-color;
-$primary-color-dark:        $red-color-dark;
+$primary-color:             $magenta-color;
+$primary-color-light:       darken($primary-color, 40%);
+$primary-color-dark:        darken($primary-color, 25%);
 
-$secondary-color:           $brand-color;
-$secondary-color-light:     $brand-color-light;
-$secondary-color-dark:      $brand-color-dark;
+$secondary-color:           $red-color;
+$secondary-color-light:     $red-color-light;
+$secondary-color-dark:      $red-color-dark;
 
 // Width of the content area
 $content-width:     1024px;
@@ -65,8 +71,8 @@ $on-mobile:         400px;
 $on-palm:           600px;
 $on-laptop:         800px;
 
-$cover-img:         "/img/background.jpg";
-$deep-cover-img:    "/img/background.jpg";
+$cover-img:         "/img/background.png";
+$deep-cover-img:    "/img/background.png";
 
 // Using media queries with like this:
 // @include media-query($on-palm) {
@@ -92,11 +98,8 @@ $deep-cover-img:    "/img/background.jpg";
     "misc",
     "components",
     "timeline",
-    "toy",
     "pagination",
     "publications",
     "bio",
-    "resume",
-    "posts",
-    "projects"
+    "resume"
     ;

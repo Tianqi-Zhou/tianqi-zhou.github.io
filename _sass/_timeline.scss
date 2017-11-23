@@ -83,6 +83,13 @@ $timeline-padding: 20px;
   font-size:      20px;
   font-weight:    500;
   font-family:    'Roboto', sans-serif;
+  color:          $brand-color-dark;
+}
+
+.timeline-institute {
+  font-size:      20px;
+  font-weight:    600;
+  font-family:    'Roboto', sans-serif;
   color:          $primary-color-dark;
 }
 
@@ -195,5 +202,5 @@ $timeline-padding: 20px;
 }
 
 .horizon-line {
-  
+
 }

@@ -1,6 +1,6 @@
 <div id="profile-cover" class="cover shallow-bg img-responsive">
   {{ site.static_files.path }}
-  <div id="profile-namecard" class="profile-wrapper wrapper-light">
+  <!-- <div id="profile-namecard" class="profile-wrapper wrapper-light">
     <div id="my-pic" class="profile-col profile-col-1">
       <img id="profile-avatar" src="{{ site.data.bio.head_pic | prepend: site.baseurl }}" alt="Me" class="circle-img border-dark"/>
     </div>
@@ -26,7 +26,7 @@
         {{ site.data.bio.short.content }}
       </div>
     </div>
-  </div>
+  </div> -->
 </div>
 <script type="text/javascript">
   function deepFeature()
@@ -37,12 +37,12 @@
 
     $('#profile-cover').removeClass('shallow-bg');
     $('#profile-cover').addClass('deep-bg');
-    
+
     $('#profile-namecard').removeClass('wrapper-light');
     $('#profile-namecard').addClass('wrapper-dark');
-    
+
     $('#my-desc').removeClass('hide');
-    $('#my-contact').addClass('hide');    
+    $('#my-contact').addClass('hide');
     // console.log('Move in now...');
   }
 
@@ -54,16 +54,16 @@
 
     $('#profile-cover').removeClass('deep-bg');
     $('#profile-cover').addClass('shallow-bg');
-    
+
     $('#profile-namecard').removeClass('wrapper-dark');
     $('#profile-namecard').addClass('wrapper-light');
-    
+
     $('#my-contact').removeClass('hide');
     $('#my-desc').addClass('hide');
     // console.log('Move out now...');
   }
 
-  $(function() { 
+  $(function() {
     $('#my-pic').hover(deepFeature, shallowFeature);
   })
 

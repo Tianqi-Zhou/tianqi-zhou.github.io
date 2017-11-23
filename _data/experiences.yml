@@ -1,36 +1,42 @@
 - date:  "Mar. 2017 - "
-  title: "Product Manager & Interaction Designer @ Ling Inc."
+  title: "Product Manager & Interaction Designer"
+  institute: "Ling Inc."
   host:
-    name: "<a href='http://www-bcf.usc.edu/~feisha/'>Jiawei Gu</a>"
+    name: "<a href='https://www.technologyreview.com/lists/innovators-under-35/2016/inventor/jiawei-gu/'>Mr. Jiawei Gu</a>"
     role: "Supervisor"
   brief: true
 - date:  "Jul. 2015 - Mar. 2017"
-  title: "Product Manager & Interaction Designer @ Deepglint Inc."
+  title: "Product Manager & Interaction Designer"
+  institute: "Deepglint Inc."
   host:
     name: "<a href=''>Dr. Yong Zhao</a>"
     role: "Supervisor"
   brief: true
 - date:  "Dec. 2014 - Feb. 2015"
-  title: "PR Intern @ Deepglint Inc."
+  title: "PR Intern"
+  institute: "Deepglint Inc."
   host:
     name: "<a href=''>Bofei He</a>"
     role: "Supervisor"
   brief: false
 - date:  "Summer 2012"
-  title: "Exchange student @ UCLA"
+  title: "Exchange student"
+  institute: "UCLA"
   desc:  "Collaborated program by ZJU and UCLA"
   host:  false
   brief: false
 - date:  "2011 - 2015"
-  title: "Undergraduate @ Chu Kochen Honors College, ZJU"
+  title: "Undergraduate Student"
+  institute: "Chu Kochen Honors College, ZJU"
   desc:  "B.Sci. in Management"
   host:
     name: "<a href=''>Prof. Xiaobo Wu</a>"
     role: "Supervisor"
   brief: true
 - date:  "2011 - 2015"
-  title: "Undergraduate student @ ZJU"
-  desc:  "B.Sci. in Agriculture & Biostatistics"
+  title: "Undergraduate Student"
+  institute: "Zhejiang University (ZJU)"
+  desc:  "B.Sci. in Applied Biology (Agriculture)"
   host:
     name: "<a href=''>Prof. Jun Zhu</a>"
     role: "Supervisor"
