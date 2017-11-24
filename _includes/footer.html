@@ -1,37 +1,26 @@
-{% if page.comments == True %}
 <footer class="site-footer">
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">
-      <a class="page-link" href="{{ '/about' | prepend: site.url }}">
-      {{ site.title | prepend: 'About ' }}
-    </a></h2>
-
     <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.data.bio.name }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.data.bio.email }}</a></li>
-        </ul>
-      </div>
+      <h2 class="footer-heading">
+        <a class="page-link" href="{{ '/about' | prepend: site.url }}">
+        {{ site.title | prepend: 'More About ' }}
+      </a></h2>
 
-      <div class="footer-col  footer-col-2">
-        {% include interactive-social.html %}
-      </div>
-
-      <div class="footer-col  footer-col-3">
-        <p class="text">{{ site.description.en | split:'.' | first}}</p>
-      </div>
+      <a class="footer-col" href="mailto:{{ site.email }}">
+        <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+        {{ site.data.bio.email }}
+      </a>
+      <a class="footer-col" href="/">
+        <i class="fa fa-address-book-o" aria-hidden="true"></i>
+        {{ site.data.bio.phone }}
+      </a>
     </div>
 
+    <div class="footer-social">
+      {% include interactive-social.html %}
+    </div>
   </div>
 
 </footer>
-{% else%}
-<footer class="site-footer">
-    <div class="wrapper">
-        <h2 class="footer-heading"> {{ site.title }}</h2>
-    </div>
-</footer>
-{% endif %}

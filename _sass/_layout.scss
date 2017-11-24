@@ -114,30 +114,24 @@
 
 .footer-col-wrapper {
   font-size:    15px;
+  text-align: center;
   color:        $grey-color;
-  margin-left:  -$spacing-unit / 2;
+  margin-left:   -$spacing-unit / 2;
+  margin-bottom:  $spacing-unit / 2;
+  padding-left:   $spacing-unit / 2;
   @extend %clearfix;
 }
 
 .footer-col {
-  float: left;
   margin-bottom:  $spacing-unit / 2;
   padding-left:   $spacing-unit / 2;
 }
 
-.footer-col-1 {
-  width: -webkit-calc(25% - (#{$spacing-unit} / 2));
-  width:         calc(25% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-2 {
-  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-  width:         calc(35% - (#{$spacing-unit} / 2));
-}
-
-.footer-col-3 {
-  width: -webkit-calc(40% - (#{$spacing-unit} / 2));
-  width:         calc(40% - (#{$spacing-unit} / 2));
+.footer-social {
+  text-align: center;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @include media-query($on-laptop) {
@@ -147,10 +141,6 @@
       width:         calc(50% - (#{$spacing-unit} / 2));
   }
 
-  .footer-col-3 {
-      width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-      width:         calc(100% - (#{$spacing-unit} / 2));
-  }
 }
 
 @include media-query($on-palm) {
@@ -219,4 +209,4 @@
   color: lighten($background-color, 5%);
   background-color: $grey-color-dark;
   border: solid 1px $grey-color-dark;
-} 
+}
