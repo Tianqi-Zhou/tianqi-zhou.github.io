@@ -1,0 +1,57 @@
+.misc-projects {
+  display: inline-block;
+}
+
+.misc-body {
+  width: -webkit-calc(100% - ( #{$spacing-unit} ));
+  width:         calc(100% - ( #{$spacing-unit} ));
+  display: inline-block;
+}
+
+.misc-item {
+  float: left;
+  margin-bottom: $spacing-unit;
+  padding-left: $spacing-unit;
+  padding-right: $spacing-unit;
+  width: -webkit-calc(50% - ( 2 * #{$spacing-unit} ));
+  width:         calc(50% - ( 2 * #{$spacing-unit} ));
+}
+
+.misc-left {
+  float: left;
+  height: 100px;
+  width:  100px;
+  position: relative;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.misc-right {
+  float: left;
+  display: table;
+  padding-left: $spacing-unit;
+  height: 100px;
+  width: -webkit-calc(100% - ( 100px + #{$spacing-unit} ) );
+  width:        -calc(100% - ( 100px + #{$spacing-unit} ) );
+}
+
+.misc-icon {
+  max-height: 100%;
+  max-width:  100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  // display: block;
+  margin:  auto;
+  width:   auto;
+  height:  auto;
+}
+
+.misc-title {
+  font-family: $base-font-family;
+  font-size: 20px;
+  display: table-cell;
+  vertical-align: middle;
+}

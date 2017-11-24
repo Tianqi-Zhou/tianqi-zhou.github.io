@@ -3,7 +3,7 @@ layout: home
 ---
 <div class="wrapper">
   <div id="bio" class="bio">
-    <h1 class="md-heading text-center">
+    <h1 class="lg-heading text-center">
       <i class="fa fa-id-card" aria-hidden="true"></i>
       ABOUT ME
     </h1>
@@ -17,7 +17,7 @@ layout: home
 
 <div class="wrapper">
   <div id="portofolio" class="portofolio">
-    <h1 class="md-heading text-center">
+    <h1 class="lg-heading text-center">
       <i class="fa fa-id-card" aria-hidden="true"></i>
       A.I. PROJECTS
     </h1>
@@ -28,9 +28,25 @@ layout: home
 
 <div class="wrapper">
   <div id="misc-projects" class="misc-projects">
-    <h1 class="md-heading text-center">
+    <h1 class="lg-heading text-center">
       <i class="fa fa-id-card" aria-hidden="true"></i>
-      MORE
+      MORE PROJECTS
     </h1>
+
+    <div class="misc-body">
+      {% for project in site.data.more %}
+      <div class="misc-item">
+        <div class="misc-left">
+          <img class="misc-icon" src="{{ project.icon | prepend: site.baseurl }}" alt="">
+        </div>
+        <div class="misc-right">
+          <span class="misc-title">
+            {{ project.title }}
+          </span>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
   </div>
 </div>
