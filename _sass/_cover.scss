@@ -197,3 +197,15 @@
   color: $white-color;
   text-decoration: underline;
 }
+
+@include media-query($on-palm) {
+  .slogan-title {
+    font-size: 60px;
+  }
+}
+
+@include media-query($on-mobile) {
+  .slogan-title {
+    font-size: 40px;
+  }
+}
