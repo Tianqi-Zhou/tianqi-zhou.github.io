@@ -10,17 +10,18 @@
 
 .misc-item {
   float: left;
-  margin-bottom: $spacing-unit;
-  padding-left: $spacing-unit;
-  padding-right: $spacing-unit;
+  padding-top:    $spacing-unit;
+  padding-bottom: $spacing-unit;
+  padding-left:   $spacing-unit;
+  padding-right:  $spacing-unit;
   width: -webkit-calc(50% - ( 2 * #{$spacing-unit} ));
   width:         calc(50% - ( 2 * #{$spacing-unit} ));
 }
 
 .misc-left {
   float: left;
-  height: 100px;
-  width:  100px;
+  height: 120px;
+  width:  120px;
   position: relative;
   margin-top: auto;
   margin-bottom: auto;
@@ -30,14 +31,14 @@
   float: left;
   display: table;
   padding-left: $spacing-unit;
-  height: 100px;
-  width: -webkit-calc(100% - ( 100px + #{$spacing-unit} ) );
-  width:        -calc(100% - ( 100px + #{$spacing-unit} ) );
+  height: 120px;
+  width: -webkit-calc(100% - ( 120px + #{$spacing-unit} ) );
+  width:        -calc(100% - ( 120px + #{$spacing-unit} ) );
 }
 
 .misc-icon {
-  max-height: 100%;
-  max-width:  100%;
+  max-height: 64%;
+  max-width:  64%;
   position: absolute;
   top: 0;
   bottom: 0;
