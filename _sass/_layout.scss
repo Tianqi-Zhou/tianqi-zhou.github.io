@@ -92,12 +92,19 @@
   }
 }
 
+.seperate-line {
+  background-image: url($seperate-line-img);
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+  width:  auto;
+  height: 80px;
+}
 
 /**
 * Site footer
 */
 .site-footer {
-  border-top:   1px solid $primary-color-dark;
+  // border-top:   1px solid $primary-color-dark;
   padding:      $spacing-unit 0;
 }
 
