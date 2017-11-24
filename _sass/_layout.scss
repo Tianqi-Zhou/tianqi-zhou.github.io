@@ -112,19 +112,24 @@
   margin-left:  0;
 }
 
-.footer-col-wrapper {
-  font-size:    15px;
+.footer-contact {
+  font-size: 14px;
   text-align: center;
-  color:        $grey-color;
-  margin-left:   -$spacing-unit / 2;
-  margin-bottom:  $spacing-unit / 2;
-  padding-left:   $spacing-unit / 2;
+  position: relative;
+  margin-left:  auto;
+  margin-right: auto;
+  width:  600px;
+  // width: -webkit-calc(55%);
+  // width:         calc(55%);
   @extend %clearfix;
 }
 
 .footer-col {
-  margin-bottom:  $spacing-unit / 2;
-  padding-left:   $spacing-unit / 2;
+  float: left;
+  padding-left: $spacing-unit / 2;
+  padding-right: $spacing-unit / 2;
+  width: -webkit-calc(50% - ( #{$spacing-unit} ));
+  width:         calc(50% - ( #{$spacing-unit} ));
 }
 
 .footer-social {
@@ -132,20 +137,27 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
+  margin-top:     $spacing-unit / 2;
+  @extend %clearfix;
 }
 
-@include media-query($on-laptop) {
-  .footer-col-1,
-  .footer-col-2 {
-      width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-      width:         calc(50% - (#{$spacing-unit} / 2));
-  }
-
+.footer-copyright {
+  font-size:    14px;
+  text-align: center;
+  position: relative;
+  margin-left:  auto;
+  margin-right: auto;
+  @extend %clearfix;
 }
 
 @include media-query($on-palm) {
+  .footer-contact {
+    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    width:         calc(100% - (#{$spacing-unit} / 2));
+  }
+
   .footer-col {
-      float: none;
+      margin-bottom: $spacing-unit / 2;
       width: -webkit-calc(100% - (#{$spacing-unit} / 2));
       width:         calc(100% - (#{$spacing-unit} / 2));
   }
@@ -162,6 +174,14 @@
 
 .text-center {
   text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .sm-heading {
