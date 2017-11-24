@@ -1,4 +1,6 @@
-<div class="back-to-top">Top</div>
+<div class="back-to-top">
+  <i class="fa fa-chevron-up" aria-hidden="true"></i>
+</div>
 
 
 <script type="text/javascript">
@@ -12,7 +14,7 @@ jQuery(document).ready(function() {
             jQuery('.back-to-top').fadeOut(duration);
         }
     });
-    
+
     jQuery('.back-to-top').click(function(event) {
         event.preventDefault();
         jQuery('html, body').animate({scrollTop: 0}, duration);
