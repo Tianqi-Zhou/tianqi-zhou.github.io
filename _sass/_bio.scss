@@ -13,3 +13,11 @@
   margin:     5px;
   padding:    5px;
 }
+.bio-video {
+  height: auto;
+  width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+  width:         calc(100% - (#{$spacing-unit} / 2));
+  @include media-query($on-mobile) {
+    display: none;
+  }
+}

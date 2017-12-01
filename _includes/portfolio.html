@@ -1,0 +1,22 @@
+<div class="portfolio-navigator"></div>
+
+<div class="portfolio-body">
+  {% for project in site.data.projects %}
+  <div class="portfolio-item">
+    <div class="portfolio-date">
+      {{ project.date }}
+    </div>
+    <div class="portfolio-title">
+      {{ project.name }}
+    </div>
+    <div class="portfolio-institute">
+      {{ project.institute }}
+    </div>
+    {% for duty in project.duties %}
+      <div class="portfolio-desc">
+        {{ duty.name }}
+      </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>

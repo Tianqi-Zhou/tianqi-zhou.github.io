@@ -4,12 +4,16 @@ layout: home
 <div class="wrapper">
   <div id="bio" class="bio">
     <h1 class="lg-heading text-center">
-      <i class="fa fa-id-card" aria-hidden="true"></i>
+      <!-- <i class="fa fa-id-card" aria-hidden="true"></i> -->
       ABOUT ME
     </h1>
     <div class="bio-body">
       <p> {{ site.data.bio.normal.content }} </p>
     </div>
+    <video class="bio-video" autoplay>
+      <source src="{{ site.data.bio.open_video | prepend: site.baseurl }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
   </div>
 </div>
 
@@ -18,31 +22,9 @@ layout: home
 <div class="wrapper">
   <div id="portofolio" class="portofolio">
     <h1 class="lg-heading text-center">
-      <i class="fa fa-id-card" aria-hidden="true"></i>
       A.I. PROJECTS
     </h1>
-      <div class="portfolio-navigator"></div>
-
-      <div class="portfolio-body">
-        {% for project in site.data.projects %}
-        <div class="portfolio-item">
-          <div class="portfolio-date">
-            {{ project.date }}
-          </div>
-          <div class="portfolio-title">
-            {{ project.name }}
-          </div>
-          <div class="portfolio-institute">
-            {{ project.institute }}
-          </div>
-          {% for duty in project.duties %}
-            <div class="portfolio-desc">
-              {{ duty.name }}
-            </div>
-          {% endfor %}
-        </div>
-        {% endfor %}
-      </div>
+    {% include portfolio.html %}
   </div>
 </div>
 
@@ -51,7 +33,6 @@ layout: home
 <div class="wrapper">
   <div id="misc-projects" class="misc-projects">
     <h1 class="lg-heading text-center">
-      <i class="fa fa-id-card" aria-hidden="true"></i>
       MORE PROJECTS
     </h1>
 
