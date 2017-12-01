@@ -9,10 +9,12 @@
     max-width:        calc(100% - (#{$spacing-unit} / 2));
   }
 }
+
 .bio-body {
   margin:     5px;
   padding:    5px;
 }
+
 .bio-video {
   height: auto;
   width: -webkit-calc(100% - (#{$spacing-unit} / 2));

@@ -103,8 +103,8 @@
 
 .seperate-line {
   background-image: url($seperate-line-img);
-  margin-top: $spacing-unit;
-  margin-bottom: $spacing-unit;
+  margin-top: 4 * $spacing-unit;
+  margin-bottom: 4 * $spacing-unit;
   width:  auto;
   height: 80px;
 }
