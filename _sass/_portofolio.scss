@@ -1,0 +1,206 @@
+
+/*
+* portfolio items
+*/
+$portfolio-padding: 60px;
+
+.portfolio-brief, .portfolio {
+  font-family: 'Roboto',sans-serif, Helvetica;
+  margin-top:   #{$spacing-unit};
+  font-size:    20px;
+  font-weight:  400;
+}
+
+.portfolio-body {
+  padding:    0;
+}
+
+.portfolio-start {
+  width:       -webkit-calc(100% - 2 * (#{$portfolio-padding}) );
+  width:       calc(100% - 2 * (#{$portfolio-padding}) );
+
+  text-align: center;
+  padding:    $portfolio-padding;
+}
+
+.portfolio-item:before {
+  width:          11px;
+  height:         11px;
+  background:     #333;
+  content:        "";
+  display:        block;
+  position:       absolute;
+  border-radius:  5px;
+}
+
+.portfolio-item {
+  width:       -webkit-calc(50% - (#{$portfolio-padding}) );
+  width:       calc(50% -  (#{$portfolio-padding}) );
+
+  position: relative;
+}
+
+.portfolio-item:nth-child(odd):before {
+  left: -8px;
+}
+
+.portfolio-item:nth-child(odd):after {
+  left: -8px;
+  bottom: 0;
+}
+
+.portfolio-item:nth-child(odd) {
+  margin-left:        50%;
+  padding-left:       $portfolio-padding;
+  border-left:        5px solid #333;
+  text-align:         left;
+}
+
+.portfolio-item:nth-child(even) {
+  margin-right:       -webkit-calc(50% + (#{$portfolio-padding}) );
+  margin-right:       calc(50% + (#{$portfolio-padding}) );
+
+  padding-right:  $portfolio-padding;
+  border-right:   5px solid #333;
+  text-align:     right;
+}
+
+.portfolio-item:nth-child(even):before {
+  right: -8px;
+}
+
+.portfolio-item:nth-child(even):after {
+  right: -8px;
+}
+
+.portfolio-date {
+  font-size:      16px;
+  font-weight:    600;
+  color:          $secondary-color-dark;
+}
+
+.portfolio-title {
+  font-size:      20px;
+  font-weight:    600;
+  font-family:    'Roboto', sans-serif;
+  color:          $primary-color-dark;
+}
+
+.portfolio-institute {
+  font-size:      16px;
+  font-weight:    500;
+  font-family:    'Roboto', sans-serif;
+  color:          $brand-color-dark;
+}
+
+.portfolio-desc {
+  font-size:      16px;
+  font-weight:    200;
+}
+
+.portfolio-host {
+  font-size:      14px;
+  font-weight:    400;
+}
+
+.portfolio > .portfolio-body > .portfolio-item:last-child:after
+{
+  bottom:         0;
+  width:          11px;
+  height:         11px;
+  background:     #333;
+  content:        "";
+  display:        block;
+  position:       absolute;
+  border-radius:  5px;
+}
+
+.portfolio > .portfolio-body > .portfolio-item:last-child:nth-child(even){
+  vertical-align:     middle;
+  min-height:         200px;
+  border-right:       5px dashed #333;
+}
+
+.portfolio > .portfolio-body > .portfolio-item:last-child:nth-child(odd){
+  vertical-align:     middle;
+  min-height:         200px;
+  border-left:        5px dashed #333;
+}
+
+@include media-query($on-palm) {
+  .portfolio-start {
+    min-height:         50px;
+    padding:            0 0 0 5px;
+    text-align:         left;
+    border-left:        5px dashed #333;
+    width:              100%;
+    padding-left:       5px;
+    margin-left:        5px;
+  }
+
+  .portfolio-start:after {
+    left:           17px;
+    width:          11px;
+    height:         11px;
+    background:     #333;
+    content:        "";
+    display:        block;
+    position:       absolute;
+    border-radius:  5px;
+  }
+
+  .portfolio-item,
+  .portfolio-item:nth-child(odd),
+  .portfolio-item:nth-child(even) {
+    min-height:         0;
+    text-align:         left;
+    border-left:        5px solid #333;
+    border-right:       0px;
+    width:              100%;
+    padding-left:       5px;
+    margin-left:        5px;
+    margin-right:       0px;
+    padding-right:      0px;
+  }
+
+  .portfolio > .portfolio-body > .portfolio-item:last-child:nth-child(odd),
+  .portfolio > .portfolio-body > .portfolio-item:last-child:nth-child(even) {
+    min-height:         0;
+    text-align:         left;
+    border-left:        5px solid #333;
+    border-right:       0px;
+    width:              100%;
+    padding-left:       5px;
+    margin-left:        5px;
+    margin-right:       0px;
+    padding-right:      0px;
+  }
+
+  .portfolio-item:before {
+    left: -8px;
+  }
+
+  .portfolio-item:after {
+    left: -8px;
+  }
+
+  .portfolio-date {
+    font-size: 14px;
+  }
+
+  .portfolio-title {
+    font-size: 16px;
+  }
+
+  .portfolio-desc {
+    font-size: 12px;
+  }
+
+  .portfolio-host {
+    font-size: 10px;
+  }
+}
+
+.horizon-line {
+
+}

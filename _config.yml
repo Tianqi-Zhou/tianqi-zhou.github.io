@@ -18,7 +18,8 @@ email: tianqi.kiko.zhou@gmail.com
 description:
   This is a online portofolio for Tianqi(Kiko) Zhou。
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://tianqi-zhou.github.io"
+logo: "/img/t-dark.png"
 
 # Build settings
 markdown: kramdown

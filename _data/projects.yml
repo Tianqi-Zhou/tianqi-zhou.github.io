@@ -1,0 +1,55 @@
+- date:  "2017.05 ~ Present"
+  name: "LingLight"
+  institute: "Ling Inc."
+  thumbnail:
+    normal: "/img/projects/thumbnail/linglight_normal.png"
+    hover:  "/img/projects/thumbnail/linglight_hover.png"
+  duties:
+    - name: "HRI design"
+    - name: "Product management"
+    - name: "User research"
+- date:  "2017.03 ~ 2017.07"
+  name: "LUKA & JIBO"
+  institute: "Ling Inc."
+  thumbnail:
+    normal: "/img/projects/thumbnail/luka_jibo_normal.png"
+    hover:  "/img/projects/thumbnail/luka_jibo_hover.png"
+  duties:
+    - name: "HRI design"
+    - name: "Affective system design"
+- date:  "2016.05 ~ 2017.03"
+  name: "Fovea Camera"
+  institute: "DeepGlint Inc."
+  thumbnail:
+    normal: "/img/projects/thumbnail/foveacam_normal.png"
+    hover:  "/img/projects/thumbnail/foveacam_hover.png"
+  duties:
+    - name: "Product management"
+    - name: "UX design"
+- date:  "2016.04 ~ 2016.09"
+  name: "Face Movie"
+  institute: "DeepGlint Inc."
+  thumbnail:
+    normal: "/img/projects/thumbnail/facemovie_normal.png"
+    hover:  "/img/projects/thumbnail/facemovie_hover.png"
+  duties:
+    - name: "Product management"
+    - name: "UI/UX design"
+- date:  "2016.03 ~ 2017.03"
+  name: "Deep Data"
+  institute: "DeepGlint Inc."
+  thumbnail:
+    normal: "/img/projects/thumbnail/deepdata_normal.png"
+    hover:  "/img/projects/thumbnail/deepdata_hover.png"
+  duties:
+    - name: "Product management"
+    - name: "UI/UX design"
+- date:  "2015.07 ~ 2016.07"
+  name: "Libra-T"
+  institute: "DeepGlint Inc."
+  thumbnail:
+    normal: "/img/projects/thumbnail/librat_normal.png"
+    hover:  "/img/projects/thumbnail/librat_hover.png"
+  duties:
+    - name: "Product management"
+    - name: "UI/UX design"

@@ -13,7 +13,7 @@ layout: home
   </div>
 </div>
 
-<!-- <div class="seperate-line"></div> -->
+<div class="seperate-line"></div>
 
 <div class="wrapper">
   <div id="portofolio" class="portofolio">
@@ -21,6 +21,28 @@ layout: home
       <i class="fa fa-id-card" aria-hidden="true"></i>
       A.I. PROJECTS
     </h1>
+      <div class="portfolio-navigator"></div>
+
+      <div class="portfolio-body">
+        {% for project in site.data.projects %}
+        <div class="portfolio-item">
+          <div class="portfolio-date">
+            {{ project.date }}
+          </div>
+          <div class="portfolio-title">
+            {{ project.name }}
+          </div>
+          <div class="portfolio-institute">
+            {{ project.institute }}
+          </div>
+          {% for duty in project.duties %}
+            <div class="portfolio-desc">
+              {{ duty.name }}
+            </div>
+          {% endfor %}
+        </div>
+        {% endfor %}
+      </div>
   </div>
 </div>
 

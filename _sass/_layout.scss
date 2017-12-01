@@ -2,12 +2,21 @@
 * Site header
 */
 .site-header {
-  border-top:     3px solid $primary-color;
-  border-bottom:  1px solid $primary-color;
+  // border-top:     3px solid $primary-color;
+  // border-bottom:  1px solid $primary-color;
   min-height:     56px;
 
   // Positioning context for the mobile navigation icon
   position: relative;
+}
+
+.site-logo {
+  display: inline-block;
+  width: auto;
+  min-height:     56px;
+  img {
+    margin-top:    8px;
+  }
 }
 
 .site-title {
@@ -69,7 +78,7 @@
         height: 15px;
 
         path {
-            fill: $primary-color-dark;
+            fill: $grey-color-dark;
         }
       }
     }
