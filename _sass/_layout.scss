@@ -3,7 +3,7 @@
 */
 .site-header {
   // border-top:     3px solid $primary-color;
-  // border-bottom:  1px solid $primary-color;
+  border-bottom:  1px solid $grey-color;
   min-height:     56px;
 
   // Positioning context for the mobile navigation icon
@@ -251,4 +251,9 @@
   color: lighten($background-color, 5%);
   background-color: $grey-color-dark;
   border: solid 1px $grey-color-dark;
+}
+
+.project-imagary {
+  display: block;
+  margin: 0 auto;
 }
