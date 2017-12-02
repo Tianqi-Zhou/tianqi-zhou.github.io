@@ -2,15 +2,20 @@
 
 <div class="portfolio-body">
   {% for project in site.data.projects %}
+    {% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
     <div class="portfolio-item">
-      <div class="portfolio-container hvr-back-pulse">
+      <a href="{{ project.link | prepend: site.baseurl }}">
+
+      {% if thecycle == 'odd' %}
+      <div class="portfolio-container hvr-grow-rotate-right">
+      {% else %}
+      <div class="portfolio-container hvr-grow-rotate-left">
+      {% endif %}
         <div class="portfolio-date">
           {{ project.date }}
         </div>
         <div class="portfolio-title">
-          <a href="{{ project.link | prepend: site.baseurl }}">
             {{ project.name }}
-          </a>
         </div>
         <div class="portfolio-institute">
           {{ project.institute }}
@@ -20,7 +25,7 @@
             {{ duty.name }}
           </div>
         {% endfor %}
-      </div>
+      </div></a>
     </div>
   {% endfor %}
 </div>
