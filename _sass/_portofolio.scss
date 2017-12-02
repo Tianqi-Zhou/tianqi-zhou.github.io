@@ -3,6 +3,7 @@
 * portfolio items
 */
 $portfolio-padding: 60px;
+$line-width: 5px;
 
 .portfolio-brief, .portfolio {
   font-family: 'Roboto',sans-serif, Helvetica;
@@ -26,11 +27,11 @@ $portfolio-padding: 60px;
 .portfolio-item:before {
   width:          11px;
   height:         11px;
-  background:     #333;
+  background:     $grey-color-minus;
   content:        "";
   display:        block;
   position:       absolute;
-  border-radius:  5px;
+  border-radius:  $line-width;
 }
 
 .portfolio-item {
@@ -52,7 +53,7 @@ $portfolio-padding: 60px;
 .portfolio-item:nth-child(odd) {
   margin-left:        50%;
   padding-left:       $portfolio-padding;
-  border-left:        5px solid #333;
+  border-left:        $line-width solid $grey-color-minus;
   text-align:         left;
 }
 
@@ -61,7 +62,7 @@ $portfolio-padding: 60px;
   margin-right:       calc(50% + (#{$portfolio-padding}) );
 
   padding-right:  $portfolio-padding;
-  border-right:   5px solid #333;
+  border-right:   $line-width solid $grey-color-minus;
   text-align:     right;
 }
 
@@ -116,23 +117,23 @@ $portfolio-padding: 60px;
   bottom:         0;
   width:          11px;
   height:         11px;
-  background:     #333;
+  background:     $grey-color-minus;
   content:        "";
   display:        block;
   position:       absolute;
-  border-radius:  5px;
+  border-radius:  $line-width;
 }
 
 .portfolio > .portfolio-body > .portfolio-item:last-child:nth-child(even){
   vertical-align:     middle;
   min-height:         200px;
-  border-right:       5px dashed #333;
+  border-right:       $line-width dashed $grey-color-minus;
 }
 
 .portfolio > .portfolio-body > .portfolio-item:last-child:nth-child(odd){
   vertical-align:     middle;
   min-height:         200px;
-  border-left:        5px dashed #333;
+  border-left:        $line-width dashed $grey-color-minus;
 }
 
 @include media-query($on-palm) {
@@ -140,7 +141,7 @@ $portfolio-padding: 60px;
     min-height:         50px;
     padding:            0 0 0 5px;
     text-align:         left;
-    border-left:        5px dashed #333;
+    border-left:        $line-width dashed $grey-color-minus;
     width:              100%;
     padding-left:       5px;
     margin-left:        5px;
@@ -150,11 +151,11 @@ $portfolio-padding: 60px;
     left:           17px;
     width:          11px;
     height:         11px;
-    background:     #333;
+    background:     $grey-color-minus;
     content:        "";
     display:        block;
     position:       absolute;
-    border-radius:  5px;
+    border-radius:  $line-width;
   }
 
   .portfolio-item,
@@ -162,7 +163,7 @@ $portfolio-padding: 60px;
   .portfolio-item:nth-child(even) {
     min-height:         0;
     text-align:         left;
-    border-left:        5px solid #333;
+    border-left:        $line-width solid $grey-color-minus;
     border-right:       0px;
     width:              100%;
     padding-left:       5px;
@@ -175,7 +176,7 @@ $portfolio-padding: 60px;
   .portfolio > .portfolio-body > .portfolio-item:last-child:nth-child(even) {
     min-height:         0;
     text-align:         left;
-    border-left:        5px solid #333;
+    border-left:        $line-width solid $grey-color-minus;
     border-right:       0px;
     width:              100%;
     padding-left:       5px;
@@ -227,7 +228,6 @@ $portfolio-padding: 60px;
   transform: scale(1.1) rotate(4deg);
 }
 
-/* Glow Rotate */
 .hvr-grow-rotate-right {
   display: inline-block;
   vertical-align: middle;
