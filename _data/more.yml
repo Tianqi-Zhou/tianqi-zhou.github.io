@@ -38,5 +38,6 @@
 - title: "Zither Musician & Ballerina"
   index: 10
   icon: "/img/projects/more/10.png"
-  desc: "<p>I have been learning playing Zither (a Chinese traditional string instrument) since I was seven years old, and have passed the top-level Zither grade examination in the next six years. I am also a amateur ballerina after graduation form college.</p>
-  <p>I am passionate about creating beautiful moments using my musical skills, once I invited my roommate, a pianist, to play music with me in the public space of our community. We together played the song “Rain on Qing Ming Festival”, which attracted many inhabitants to watch and have conversations with us. In that beautiful way we really spent a great time with all the neighbors and got closer to each other.</p>"
+  desc: "<p>I have been learning playing Zither (a Chinese traditional string instrument) since I was seven years old, and have passed the top-level Zither examination in the next six years. I am also a amateur ballerina.</p>
+  <p>I am passionate about creating beautiful moments with musics. Once I invited my roommate, a pianist, to play the song \"Rain on Qing Ming Festival\" in public space. <a href='https://youtu.be/83WuwA2NM04'>Videos on Youtube</a></p>
+  <p><audio style='width:100%' controls><source src=\"/img/videos/zither.m4a\" type=\"audio/mpeg\"></audio></p>"
