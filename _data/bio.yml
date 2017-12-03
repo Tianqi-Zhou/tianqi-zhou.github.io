@@ -5,6 +5,7 @@ phone:      "+86 15267038428"
 head_pic:   "/img/me.png"
 deep_pic:   "/img/me.png"
 open_video: "/img/videos/opening.mp4"
+open_video_poster: "/img/videos/opening.poster.jpg"
 normal:
   date:     ""
   title:    ""

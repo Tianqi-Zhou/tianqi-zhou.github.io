@@ -2,7 +2,7 @@
 layout: home
 ---
 <div class="wrapper">
-  <div id="bio" class="bio">
+  <section id="bio" class="bio">
     <h1 class="lg-heading text-center">
       <!-- <i class="fa fa-id-card" aria-hidden="true"></i> -->
       ABOUT ME
@@ -10,45 +10,31 @@ layout: home
     <div class="bio-body">
       <p> {{ site.data.bio.normal.content }} </p>
     </div>
-    <video class="bio-video" autoplay>
-      <source src="{{ site.data.bio.open_video | prepend: site.baseurl }}" type="video/mp4">
+    <video class="bio-video" poster="{{ site.data.bio.open_video_poster | prepend: site.baseurl }}" controls autoplay muted>
+      <source src="{{ site.data.bio.open_video | prepend: site.baseurl }}"  type="video/mp4">
       Your browser does not support the video tag.
     </video>
-  </div>
+  </section>
 </div>
 
 <div class="seperate-line"></div>
 
 <div class="wrapper">
-  <div id="portfolio" class="portfolio">
+  <section id="portfolio" class="portfolio">
     <h1 class="lg-heading text-center">
       A.I. PROJECTS
     </h1>
     {% include portfolio.html %}
-  </div>
+  </section>
 </div>
 
 <div class="seperate-line"></div>
 
 <div class="wrapper">
-  <div id="misc-projects" class="misc-projects">
+  <section id="misc-projects" class="misc-projects">
     <h1 class="lg-heading text-center">
       MORE PROJECTS
     </h1>
-
-    <div class="misc-body">
-      {% for project in site.data.more %}
-      <div class="misc-item hvr-float-fade">
-        <div class="misc-left">
-          <img class="misc-icon" src="{{ project.icon | prepend: site.baseurl }}" alt="">
-        </div>
-        <div class="misc-right">
-          <span class="misc-title">
-            {{ project.title }}
-          </span>
-        </div>
-      </div>
-      {% endfor %}
-    </div>
-  </div>
+    {% include more.html %}
+  </section>
 </div>

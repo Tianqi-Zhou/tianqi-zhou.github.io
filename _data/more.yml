@@ -1,20 +1,30 @@
 - title: "\"Microscopic Moon\""
+  index: 1
   icon: "/img/projects/more/1.png"
 - title: "A \"Swam\" in the Laboratory"
+  index: 2
   icon: "/img/projects/more/2.png"
 - title: "Modular Programming Contest"
+  index: 3
   icon: "/img/projects/more/3.png"
 - title: "\"Steve Jobs is looking at you!\""
+  index: 4
   icon: "/img/projects/more/4.png"
 - title: "\"A Book with a Handle\""
+  index: 5
   icon: "/img/projects/more/5.png"
 - title: "\"Cement Bags Symphony\""
+  index: 6
   icon: "/img/projects/more/6.png"
 - title: "Quantum Physics Seminar"
+  index: 7
   icon: "/img/projects/more/7.png"
 - title: "\"Three Days Not To See\""
+  index: 8
   icon: "/img/projects/more/8.png"
 - title: "Swimming Athelete & Hurdler"
+  index: 9
   icon: "/img/projects/more/9.png"
 - title: "Zither Musician"
+  index: 10
   icon: "/img/projects/more/10.png"

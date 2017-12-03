@@ -1,0 +1,42 @@
+<div class="misc-body">
+  {% for project in site.data.more %}
+  <div class="misc-entry is-collapsed">
+    <div class="misc-basic hvr-float-fade" id="{{ project.index }}">
+      <div class="misc-left">
+        <img class="misc-icon" src="{{ project.icon | prepend: site.baseurl }}" alt="">
+      </div>
+      <div class="misc-right">
+        <span class="misc-title">
+          {{ project.title }}
+        </span>
+      </div>
+    </div>
+    <div class="arrow-up"></div>
+    <div class="misc-expand">
+      <a href="#{{ project.index }}" class="misc-close"></a>
+      <img class="misc-image-large" src="http://www.bcumc.org/Sermons/wp-content/uploads/2016/09/construction-sign.jpg" alt="Example 1" />
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<script type="text/javascript">
+
+var $cell = $('.misc-entry');
+
+$cell.find('.misc-basic').click(function() {
+  var $thisCell = $(this).closest('.misc-entry');
+
+  if ($thisCell.hasClass('is-collapsed')) {
+    $cell.not($thisCell).removeClass('is-expanded').addClass('is-collapsed');
+    $thisCell.removeClass('is-collapsed').addClass('is-expanded');
+  } else {
+    $thisCell.removeClass('is-expanded').addClass('is-collapsed');
+  }
+});
+
+
+$cell.find('.misc-close').click(function() {
+  var $thisCell = $(this).closest('.misc-entry');
+  $thisCell.removeClass('is-expanded').addClass('is-collapsed');
+});
+</script>

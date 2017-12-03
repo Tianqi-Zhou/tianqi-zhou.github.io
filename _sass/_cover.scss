@@ -216,7 +216,16 @@
   width: 100%;
 }
 
+@include media-query($on-laptop) {
+  .slogan {
+    top: 80px;
+  }
+}
+
 @include media-query($on-palm) {
+  .slogan {
+    top: 100px;
+  }
   .slogan-title {
     font-size: 60px;
   }
@@ -227,7 +236,7 @@
 
 @include media-query($on-mobile) {
   .slogan-title {
-    font-size: 40px;
+    font-size: 30px;
   }
   .slogan-table {
     display: none;
