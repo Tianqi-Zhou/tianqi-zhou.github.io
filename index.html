@@ -10,7 +10,7 @@ layout: home
     <div class="bio-body">
       <p> {{ site.data.bio.normal.content }} </p>
     </div>
-    <video class="bio-video" poster="{{ site.data.bio.open_video_poster | prepend: site.baseurl }}" controls autoplay muted>
+    <video class="bio-video" poster="{{ site.data.bio.open_video_poster | prepend: site.baseurl }}" controls autoplay>
       <source src="{{ site.data.bio.open_video | prepend: site.baseurl }}"  type="video/mp4">
       Your browser does not support the video tag.
     </video>
