@@ -15,6 +15,7 @@
 .hvr-float-fade:hover, .hvr-float-fade:focus, .hvr-float-fadeactive {
   background-color: $grey-color-light;
   font-weight: 400;
+  color: $primary-color;
 }
 .hvr-float-fade:hover, .hvr-float-fade:focus, .hvr-float-fade:active {
   -webkit-transform: translateY(-10px);

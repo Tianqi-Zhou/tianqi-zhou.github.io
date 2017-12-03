@@ -1,30 +1,42 @@
 - title: "\"Microscopic Moon\""
   index: 1
   icon: "/img/projects/more/1.png"
+  desc: "<p>One day, in my botany experiment course, I was using a microscope to watch the microbe like Volvox and Spirogyra. When I use my cell phone to take a picture through microscope, the picture I took came out with amazing colors and light effects that looked like the moon's surface. So I named the photo series \"Microscopic Moon\". In addition to a variety of plant slices, a larva of mosquitoes was also captured by me.</p>"
 - title: "A \"Swam\" in the Laboratory"
   index: 2
   icon: "/img/projects/more/2.png"
+  desc: "<p>In a chemistry experiment class, when I turned to look at the test bed near the window, I was surprised to find that the faucet on the lab bench looked like a \"swam\" with \"wings\". After taking a closer look, it  turned to be the potted leaves casting on the shadow of the curtains. So I shot this beautiful scene down, and named it A \"Swam\" In The Laboratory.</p>"
 - title: "Modular Programming Contest"
   index: 3
   icon: "/img/projects/more/3.png"
+  desc: "<p>I participated in a modular programming competition by International Forum On Lifestyle Design And Technology 2016. In that competition we needed to create a interactive game using Ardoino and  kits which contained sensors like the photoresistor, the infrared human body detect sensor and output devices like color LED lights, buzzers and steering engines. As the leader and the programmer of the team, I came up with the idea of  golf playing. And we finally won the first prize with our collaboration efforts.</p>"
 - title: "\"Steve Jobs is looking at you!\""
   index: 4
   icon: "/img/projects/more/4.png"
+  desc: "<p>One day I saw a picture of Steve Jobs which inspired me designing an interesting interactive background picture in the WeChat app. When you enter the personal page, you can see Steve Jobs looks down at my picture, thinking \"What is she thinking about ?\" Then you are prompted by the tip on the top of the picture to pull down the page. That is the surprise moment you can see the answer, which is hidden before, says \"Tian Knows !\" That is a pun that stands for \"God knows\" on the one hand, and on the other hand, only Tian (which is my name) knows.</p>"
 - title: "\"A Book with a Handle\""
   index: 5
   icon: "/img/projects/more/5.png"
+  desc: "<p>I love reading, especially paper books. In a big city like Beijing, it usually takes hours on transportation, and I always try to read books during this time. However, standing on a subway makes reading difficult, as one hand is tight with the door handle.</p> <p>So I designed a book with a handle, and prototype it with a plastic handle from the milk box. With that special handle, people can use a single hand to firmly hold a book for reading. Besides this, it also made the book easier for people to take out from the shelf. A patent is granted for this invention. </p>"
 - title: "\"Cement Bags Symphony\""
   index: 6
   icon: "/img/projects/more/6.png"
+  desc: "<p>One day I found some cement bags along the wall of The Summer Place (in Beijing). And I came up with the idea to create a song using the number of the bags for the musical notes (i.e. 2 bags stand for `RE`). The musics created sounds much better than I expected.</p>
+  <p><audio style='width:100%' controls><source src=\"/img/videos/cement-bag-song.mp3\" type=\"audio/mpeg\"></audio></p>"
 - title: "Quantum Physics Seminar"
   index: 7
   icon: "/img/projects/more/7.png"
+  desc: "<p>I am always fascinated by the quantum physics theories and passionate about changing our society as a volunteer. Therefore, during an education progam launched by PEER (an NGO supporting education in the village), I had a chance to open a seminar on quantum physics for high school kids in Hunan. To make students better understand the materials, I followed Steven Hawking's explanation in his <i>The Grand Design</i>. I made each student to be a 'physicist' in our history and asked them to present what “themself” has done for physics. Students were inspired by such way of teaching and grew their own interests towards quantum physics.</p>"
 - title: "\"Three Days Not To See\""
   index: 8
   icon: "/img/projects/more/8.png"
+  desc: "<p>In my spare time, I joined the Hongdandan Bejing, an organization serving the blind. Here volunteers describe movies to the blind orally, and record textbooks to offer the blind children learning materials. Once I came up with the idea of “Three days not to see” event. It is an activity that makes normal children to experience the life of the blind, through blindfolding their eyes and let them do normal activities such as dining, walking, etc. This educational activity helped children to children be aware about the blinds' dificultty, and made them more welling to help the blind when they could.</p>"
 - title: "Swimming Athelete & Hurdler"
   index: 9
   icon: "/img/projects/more/9.png"
-- title: "Zither Musician"
+  desc: "<p>I was a professional swimming athlete in local swimming team of the city when I was at primary school. At that time I won the bronze medal in the provincial competition and had the chance to join provincial swimming team. Then I decided to swim for my interests but not for a career. I became a hurdle in high school and won the silver medal in the school sports meeting. I really enjoy the feeling of accomplishment when I play sports.</p>"
+- title: "Zither Musician & Ballerina"
   index: 10
   icon: "/img/projects/more/10.png"
+  desc: "<p>I have been learning playing Zither (a Chinese traditional string instrument) since I was seven years old, and have passed the top-level Zither grade examination in the next six years. I am also a amateur ballerina after graduation form college.</p>
+  <p>I am passionate about creating beautiful moments using my musical skills, once I invited my roommate, a pianist, to play music with me in the public space of our community. We together played the song “Rain on Qing Ming Festival”, which attracted many inhabitants to watch and have conversations with us. In that beautiful way we really spent a great time with all the neighbors and got closer to each other.</p>"

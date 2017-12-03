@@ -27,8 +27,8 @@
   display: table;
   padding-left: $spacing-unit;
   height: 120px;
-  width: -webkit-calc(100% - ( 120px + #{$spacing-unit} ) );
-  width:        -calc(100% - ( 120px + #{$spacing-unit} ) );
+  width: -webkit-calc(100% - unquote( 120px + #{$spacing-unit} ) );
+  width:        -calc(100% - unquote( 120px + #{$spacing-unit} ) );
 }
 
 .misc-icon {
@@ -47,18 +47,9 @@
 
 .misc-title {
   font-family: $base-font-family;
-  font-size: 20px;
+  font-size: 18px;
   display: table-cell;
   vertical-align: middle;
-}
-
-/* Expo */
-.misc-image-large {
-  height: 320px;
-  display: block;
-  padding: 40px;
-  margin: 0 auto;
-  box-sizing: border-box;
 }
 
 .misc-basic {
@@ -81,14 +72,14 @@
   padding: 0 5px;
   box-sizing: content-box;
   overflow: hidden;
-  background: #222;
+  background: $grey-color-plus;
   max-height: 0;
   transition: max-height .3s ease-in-out,
               margin-bottom .1s .2s;
 }
 
 .misc-entry.is-expanded .misc-expand {
-  max-height: 420px;
+  max-height: 480px;
   margin-bottom: 10px;
 }
 
@@ -98,7 +89,7 @@
 }
 
 .misc-entry.is-expanded .arrow-up {
-  border-bottom: 8px solid #222;
+  border-bottom: 8px solid $grey-color-plus;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   height: 0;
@@ -127,27 +118,67 @@
   .misc-entry {
     width: 100%;
   }
+  .misc-entry:nth-of-type(2n+2) .misc-expand {
+    margin-left: 0px;
+  }
+
+  .misc-entry:nth-of-type(2n+3) {
+    clear:left;
+  }
 
   .misc-expand {
     width: 100%;
   }
 }
 
+.misc-details-expo {
+  display: inline-block;
+}
+
+.misc-image-large {
+  height: 320px;
+  display: block;
+  padding: 40px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.misc-details-text {
+  width: -webkit-calc(50% - ( #{$spacing-unit} ));
+  width:         calc(50% - ( #{$spacing-unit} ));
+  float:    left;
+  overflow: hidden;
+  padding-top: $spacing-unit;
+  padding-right: $spacing-unit;
+  color: $grey-color-bright;
+  font-size: 14px;
+  h5 {
+    padding-top: $spacing-unit / 2;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+
+.misc-details-expo {
+  width: 50%;
+  float: left;
+}
 
 .misc-close:before {
   content: '×';
 }
 
-.misc-close:hover {
-  color: #fff;
-}
-
-.misc-close {
+.misc-close,
+.misc-close:before {
   position: absolute;
   top: 10px;
   right: 20px;
-  color: #454545;
+  color: $grey-color;
   font-size: 50px;
   line-height: 50px;
   text-decoration: none;
+}
+
+.misc-close:hover {
+  color: $grey-color-light;
 }
