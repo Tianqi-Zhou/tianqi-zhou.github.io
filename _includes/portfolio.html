@@ -16,9 +16,7 @@
         <div class="portfolio-title">
             {{ project.name }}
         </div>
-        <div class="portfolio-institute">
-          {{ project.institute }}
-        </div>
+        <img class="portfolio-img" src="{{ project.thumbnail.normal | prepend: site.baseurl}}" alt="">
         {% for duty in project.duties %}
           <div class="portfolio-desc">
             {{ duty.name }}
