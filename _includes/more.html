@@ -14,9 +14,16 @@
     <div class="arrow-up"></div>
     <div class="misc-expand">
       <a href="#{{ project.index }}" class="misc-close"></a>
-      <div class="misc-details-expo">
-        <img class="misc-image-large" src="http://www.bcumc.org/Sermons/wp-content/uploads/2016/09/construction-sign.jpg" alt="Example 1" />
+      <div class="slide-wrapper">
+        {% for image in project.images %}
+        <div class="slide">
+          <img id="{{ forloop.index | prepend: project.id }}" class="slide-image" src="{{ image.link }}" alt="illustration" />
+        </div>
+        {% endfor %}
       </div>
+      <script type="text/javascript">
+
+      </script>
       <div class="misc-details-text">
         <h5> {{ project.title }} </h5>
         <div class=""> {{ project.desc }} </div>
@@ -26,7 +33,6 @@
   {% endfor %}
 </div>
 <script type="text/javascript">
-
 var $cell = $('.misc-entry');
 
 $cell.find('.misc-basic').click(function() {
