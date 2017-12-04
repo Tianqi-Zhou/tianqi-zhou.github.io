@@ -166,7 +166,7 @@
   image-orientation: from-image;
 }
 
-.misc-details-text {
+.slide-text {
   width: -webkit-calc(50% - ( #{$spacing-unit} ));
   width:         calc(50% - ( #{$spacing-unit} ));
   float:    left;
@@ -182,9 +182,18 @@
   }
 }
 
-.misc-details-expo {
-  width: 50%;
-  float: left;
+@include media-query($on-palm) {
+  .slide-wrapper {
+    width: 100%;
+  }
+
+  .slide-text {
+    width: 100%;
+  }
+
+  .misc-entry.is-expanded .misc-expand {
+    max-height: 100%;
+  }
 }
 
 .misc-close:before {
