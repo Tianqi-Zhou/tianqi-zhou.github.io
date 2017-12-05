@@ -14,14 +14,34 @@
     <div class="arrow-up"></div>
     <div class="misc-expand">
       <a href="#{{ project.index }}" class="misc-close"></a>
-      <div class="slide-wrapper">
+      <div class="slide-wrapper" id="{{ project.id | append: 'slidshow' }}">
         {% for image in project.images %}
-        <div class="slide">
-          <img id="{{ forloop.index | prepend: project.id }}" class="slide-image" src="{{ image.link }}" alt="illustration" />
-        </div>
+          <div id="{{ forloop.index | prepend: project.id }}" class="slide">
+            <img id="{{ forloop.index | prepend: project.id }}" class="slide-image" src="{{ image.link }}" alt="illustration" />
+          </div>
         {% endfor %}
       </div>
+      <button class="w3-button w3-display-left" onclick="plusDivs('{{ project.id | append: 'slidshow' }}', -1)">&#10094;</button>
+      <button class="w3-button w3-display-right" onclick="plusDivs('{{ project.id | append: 'slidshow' }}', 1)">&#10095;</button>
       <script type="text/javascript">
+        var slideIndex = 1;
+        showDivs("{{ project.id | append: 'slidshow' }}", slideIndex);
+
+        function plusDivs(divname, n) {
+          console.log(divname + 'clicked.');
+          showDivs(divname, slideIndex += n);
+        }
+        function showDivs(divname, n) {
+          var i;
+          var parent = $("#"+divname);
+          var x = parent.children();
+          if (n > x.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = x.length} ;
+          for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+          }
+          x[slideIndex-1].style.display = "block";
+        }
       </script>
       <div class="slide-text">
         <h5> {{ project.title }} </h5>
