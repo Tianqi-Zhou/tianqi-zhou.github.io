@@ -14,18 +14,20 @@
     <div class="arrow-up"></div>
     <div class="misc-expand">
       <a href="#{{ project.index }}" class="misc-close"></a>
-      <div class="slide-wrapper" id="{{ project.id | append: 'slidshow' }}">
+      <div class="slide-wrapper" id="{{ project.id | append: 'slideshow' }}">
         {% for image in project.images %}
           <div id="{{ forloop.index | prepend: project.id }}" class="slide">
             <img id="{{ forloop.index | prepend: project.id }}" class="slide-image" src="{{ image.link }}" alt="illustration" />
           </div>
         {% endfor %}
       </div>
-      <button class="w3-button w3-display-left" onclick="plusDivs('{{ project.id | append: 'slidshow' }}', -1)">&#10094;</button>
-      <button class="w3-button w3-display-right" onclick="plusDivs('{{ project.id | append: 'slidshow' }}', 1)">&#10095;</button>
+      {% if project.images.size > 1 %}
+      <button class="w3-button w3-display-left" onclick="plusDivs('{{ project.id | append: 'slideshow' }}', -1)">&#10094;</button>
+      <button class="w3-button w3-display-right" onclick="plusDivs('{{ project.id | append: 'slideshow' }}', 1)">&#10095;</button>
+      {% endif %}
       <script type="text/javascript">
         var slideIndex = 1;
-        showDivs("{{ project.id | append: 'slidshow' }}", slideIndex);
+        showDivs("{{ project.id | append: 'slideshow' }}", slideIndex);
 
         function plusDivs(divname, n) {
           console.log(divname + 'clicked.');

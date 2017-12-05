@@ -199,8 +199,23 @@
 }
 
 .slogan-table {
-  margin-top: $spacing-unit;
+  margin-top:         $spacing-unit;
+  margin-right:       auto;
+  margin-left:        auto;
+  max-width: -webkit-calc(#{$content-width * 0.6} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width * 0.6} - (#{$spacing-unit} * 2));
+  padding-right:      $spacing-unit;
+  padding-left:       $spacing-unit;
+  @extend %clearfix;
+
+  @include media-query($on-laptop) {
+    max-width: -webkit-calc(#{$content-width * 0.6} - (#{$spacing-unit}));
+    max-width:         calc(#{$content-width * 0.6} - (#{$spacing-unit}));
+    padding-right:  $spacing-unit / 2;
+    padding-left:   $spacing-unit / 2;
+  }
 }
+
 .slogan-row {
   float: left;
   width: 33.3%;
@@ -209,7 +224,7 @@
 
 .slogan-subtitle {
   display:  inline-block;
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 100;
   color: $white-color;
   padding-left:  40%;
