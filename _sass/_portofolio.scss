@@ -227,4 +227,27 @@ $line-width: 5px;
   margin-right: auto;
   margin-top: $spacing-unit;
   margin-bottom: $spacing-unit;
+  width:  720px;
+  height: 405px;
+}
+
+@include media-query($on-laptop) {
+  .project-youtube {
+    width:  560px;
+    height: 315px;
+  }
+}
+
+@include media-query($on-palm) {
+  .project-youtube {
+    width:  480px;
+    height: 270px;
+  }
+}
+
+@include media-query($on-mobile) {
+  .project-youtube {
+    width:  320px;
+    height: 180px;
+  }
 }
