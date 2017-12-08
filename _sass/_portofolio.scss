@@ -219,3 +219,12 @@ $line-width: 5px;
     display: none;
   }
 }
+
+.project-youtube {
+  display:  block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+}
