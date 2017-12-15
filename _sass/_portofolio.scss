@@ -220,6 +220,30 @@ $line-width: 5px;
   }
 }
 
+.project-tag {
+  float: left;
+  width: 33%;
+  margin-top: $spacing-unit / 2;
+}
+
+.tag-img {
+  display:        block;
+  object-fit:     cover;
+  object-position: center;
+  margin:         0px auto;
+  height:         240px;
+  width:          240px;
+  border-width:   4px;
+  border-radius:  50%;
+}
+
+.tag-heading {
+  font-size: 12px;
+  text-align: center;
+  color: $grey-color-minus;
+  font-weight: 500;
+}
+
 .project-youtube {
   display:  block;
   position: relative;
@@ -243,11 +267,19 @@ $line-width: 5px;
     width:  480px;
     height: 270px;
   }
+  .tag-img {
+    height: 120px;
+    width:  120px;
+  }
 }
 
 @include media-query($on-mobile) {
   .project-youtube {
     width:  320px;
     height: 180px;
+  }
+  .tag-img {
+    height: 90px;
+    width:  90px;
   }
 }
