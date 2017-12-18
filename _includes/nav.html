@@ -12,15 +12,8 @@
 
   <div class="trigger">
     <a class="page-link" href="{{ site.baseurl }}/">Home</a>
-
-    {% for page in site.pages %}
-      <!-- Button for Posts -->
-      {% if page.display %}
-        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
-          {{ page.title }}
-        </a>
-      {% endif %}
-
-    {% endfor %}
+    <a class="page-link" href="{{ '#portfolio' | prepend: site.baseurl }}">AI Projects</a>
+    <a class="page-link" href="{{ '#misc-projects' | prepend: site.baseurl }}">Fun</a>
+    <a class="page-link" href="{{ '/img/resume/v3.2.pdf' | prepend: site.baseurl }}">Resume</a>
   </div>
 </nav>
