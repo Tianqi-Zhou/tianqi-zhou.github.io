@@ -10,12 +10,22 @@
     - name: "Product Designer"
     - name: "HRI Designer"
 - date:  "2017.03 ~ 2017.07"
-  name: "LUKA & JIBO"
+  name: "JIBO"
   institute: "Ling Inc."
   thumbnail:
-    normal: "/img/projects/thumbnail/luka_jibo_normal.png"
-    hover:  "/img/projects/thumbnail/luka_jibo_hover.png"
-  link: "/projects/luka-jibo"
+    normal: "/img/projects/thumbnail/jibo_normal.png"
+    hover:  "/img/projects/thumbnail/jibo_hover.png"
+  link: "/projects/jibo"
+  duties:
+    - name: "HRI Designer"
+    - name: "Affective System Designer"
+- date:  "2017.03 ~ 2017.07"
+  name: "LUKA"
+  institute: "Ling Inc."
+  thumbnail:
+    normal: "/img/projects/thumbnail/luka_normal.png"
+    hover:  "/img/projects/thumbnail/luka_hover.png"
+  link: "/projects/luka"
   duties:
     - name: "HRI Designer"
     - name: "Affective System Designer"
