@@ -3,7 +3,7 @@ layout: post
 title:  "Jibo and Luka"
 date:   2017-09-14 18:03:25 -0700
 categories: projects
-imagary_header: "/img/projects/jiboluka/header.jpg"
+imagary_header: "/img/projects/jiboluka/luka_header.jpg"
 imagary_luka_intro: "/img/projects/jiboluka/luka_intro.jpg"
 imagary_luka_design: "/img/projects/jiboluka/luka_design.jpg"
 imagary_luka_game: "/img/projects/jiboluka/luka_game.jpg"
@@ -35,7 +35,17 @@ englishs:
     name: "Well Done"
   - tag: "/img/projects/jiboluka/english/6.gif"
     name: "Outstanding"
+previous: "/projects/jibo"
+next:     "/projects/fovea-cam"
 ---
+
+<div class="wrapper">
+  <div class="pagination">
+    <a class="float-left" href="{{page.previous | prepend: site.baseurl}}">❮</a>
+    <a class="float-right" href="{{page.next | prepend: site.baseurl}}">❯</a>
+  </div>
+</div>
+
 <!-- Luka  -->
 <img class="project-imagary" src="{{ page.imagary_header | prepend: site.baseurl }}" alt="">
 
@@ -70,3 +80,10 @@ englishs:
 <img class="project-imagary" src="{{ page.imagary_luka_footer | prepend: site.baseurl }}" alt="">
 
 <iframe class="project-youtube" src="https://www.youtube.com/embed/g6cSP3u87iY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+<div class="wrapper">
+  <div class="pagination">
+    <a class="float-left" href="{{page.previous | prepend: site.baseurl}}">❮</a>
+    <a class="float-right" href="{{page.next | prepend: site.baseurl}}">❯</a>
+  </div>
+</div>

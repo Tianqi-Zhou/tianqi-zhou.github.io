@@ -8,7 +8,16 @@ imagary_content1: "/img/projects/linglight/design-1.jpg"
 imagary_content2: "/img/projects/linglight/design-2.jpg"
 imagary_content3: "/img/projects/linglight/interaction-design.jpg"
 imagary_footer: "/img/projects/linglight/footer.jpg"
+previous: "#"
+next:     "/projects/jibo"
 ---
+
+<div class="wrapper">
+  <div class="pagination">
+    <a class="float-left" href="{{page.previous | prepend: site.baseurl}}">❮</a>
+    <a class="float-right" href="{{page.next | prepend: site.baseurl}}">❯</a>
+  </div>
+</div>
 
 <img class="project-imagary" src="{{ page.imagary_header | prepend: site.baseurl }}" alt="">
 
@@ -20,5 +29,11 @@ imagary_footer: "/img/projects/linglight/footer.jpg"
 
 <img class="project-imagary" src="{{ page.imagary_content3 | prepend: site.baseurl }}" alt="">
 
-
 <img class="project-imagary" src="{{ page.imagary_footer | prepend: site.baseurl }}" alt="">
+
+<div class="wrapper">
+  <div class="pagination">
+    <a class="float-left" href="{{page.previous | prepend: site.baseurl}}">❮</a>
+    <a class="float-right" href="{{page.next | prepend: site.baseurl}}">❯</a>
+  </div>
+</div>

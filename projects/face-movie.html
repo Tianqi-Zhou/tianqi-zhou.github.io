@@ -7,7 +7,16 @@ imagary_header: "/img/projects/facemovie/header.jpg"
 imagary_intro: "/img/projects/facemovie/intro.jpg"
 imagary_design_p1: "/img/projects/facemovie/design-1.jpg"
 imagary_design_p2: "/img/projects/facemovie/design-2.jpg"
+previous: "/projects/fovea-cam"
+next:     "/projects/deep-data"
 ---
+
+<div class="wrapper">
+  <div class="pagination">
+    <a class="float-left" href="{{page.previous | prepend: site.baseurl}}">❮</a>
+    <a class="float-right" href="{{page.next | prepend: site.baseurl}}">❯</a>
+  </div>
+</div>
 
 <img class="project-imagary" src="{{ page.imagary_header | prepend: site.baseurl }}" alt="">
 
@@ -18,3 +27,10 @@ imagary_design_p2: "/img/projects/facemovie/design-2.jpg"
 <img class="project-imagary" src="{{ page.imagary_design_p1 | prepend: site.baseurl }}" alt="">
 
 <img class="project-imagary" src="{{ page.imagary_design_p2 | prepend: site.baseurl }}" alt="">
+
+<div class="wrapper">
+  <div class="pagination">
+    <a class="float-left" href="{{page.previous | prepend: site.baseurl}}">❮</a>
+    <a class="float-right" href="{{page.next | prepend: site.baseurl}}">❯</a>
+  </div>
+</div>
