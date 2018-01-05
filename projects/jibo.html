@@ -28,7 +28,11 @@ next:     "/projects/luka"
 
 <div class="wrapper">
   <div class="pagination">
-    <a class="float-left" href="{{page.previous | prepend: site.baseurl}}">❮</a>
-    <a class="float-right" href="{{page.next | prepend: site.baseurl}}">❯</a>
+    <div class="float-left">
+      <a class="" href="{{page.previous | prepend: site.baseurl}}">❮</a>
+    </div>
+    <div class="float-right">
+      <a class="" href="{{page.next | prepend: site.baseurl}}">❯</a>
+    </div>
   </div>
 </div>
